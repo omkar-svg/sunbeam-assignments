@@ -1,0 +1,97 @@
+body{
+   height: 100%;
+   width: 100%;
+}
+#title1{
+text-align: center;
+}
+
+#container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    
+}
+#text1{
+    height: 5vh;
+    width: 350px;
+    border-radius: 4px;
+   
+}
+
+#add_btn{
+    height: 5.7vh;
+    background-color:rgb(45, 42, 222) ;
+    border-radius: 4px 4px 0px 0px ;
+     color: white;
+     border-width: 5px;
+     border-color: rgb(77, 201, 207);
+}
+
+.btn_class{
+   background-color: red;
+   color: white;
+   border-radius: 4px;
+   border-color: none;
+}
+
+.task_class{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    border: 2px solid black;
+    
+}
+
+
+
+
+
+#task_container {
+    list-style: none;
+    padding: 0;
+    width: 400px;
+       border: 2px solid rgb(255, 255, 255);
+}
+
+.task {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 10px 12px;
+    margin-bottom: 10px;
+
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    background: #fff;
+}
+
+.task-text {
+    font-size: 16px;
+}
+
+.delete-btn {
+    background-color: #e63946;
+    color: white;
+    border: none;
+    padding: 6px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.delete-btn:hover {
+    background-color: #d62828;
+}
+
+#kkk{
+    
+   display: flex;
+   justify-content: center;
+}
+
+#main{
+/* border: 2px solid black; */
+   height: 20vh;
+}
