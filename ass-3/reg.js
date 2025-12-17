@@ -34,39 +34,52 @@ reg_btn.addEventListener("click", function () {
 
     if (!validateEmail(uemail)) {
        document.getElementById("emailError").style.display = "block";
+       r_email.style.borderColor = "red"
     }
     else{
         cnt++;
+        r_email.style.borderColor = "gray"
        document.getElementById("emailError").style.display = "none";   
     }
 
     if (!validatePassword(upass)) {
+        r_pass.style.borderColor = "red"
        document.getElementById("passError").style.display = "block";
     }
     else{
         cnt++;
+        r_pass.style.borderColor = "gray"
        document.getElementById("passError").style.display = "none";   
     }
 
     if (!validateName(uname)) {
+        r_name.style.borderColor = "red"
        document.getElementById("nameError").style.display = "block";
     }
     else{
         cnt++;
+        r_name.style.borderColor = "gray"
        document.getElementById("nameError").style.display = "none";   
     }
 
     if (!validateNumber(unum)) {
+        r_num.style.borderColor = "red"
        document.getElementById("numError").style.display = "block";
     }
     else{
         cnt++;
+        r_num.style.borderColor = "gray"
        document.getElementById("numError").style.display = "none";   
     }
-    if(cnt===4)
-        alert("login sucsessfull");
+    if(cnt===4){
+       setTimeout(function(){
+           alert("login sucsessfull");
+       },1000)
+    }
     else{
-         alert("login fail");
+         setTimeout(function(){
+             alert("login fail");
+       },1000)
     }
 
 });
